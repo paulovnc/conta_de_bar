@@ -4,9 +4,12 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 public class ContaRepositorio {
-	private String[] scriptCreate={
-		"CREATE TABLE itens (id integer PRIMARY KEY AUTOINCREMENT NOT NULL, descricao varchar(70) NOT NULL);"
 
+	private String[] scriptCreate={
+		"CREATE TABLE itens (id integer PRIMARY KEY AUTOINCREMENT NOT NULL, descricao varchar(70) NOT NULL, figura varchar(30) NOT NULL);",
+		"INSERT INTO itens(descricao,figura) VALUES('Guarana','guarana');",
+		"INSERT INTO itens(descricao,figura) VALUES('Cerveja', 'cerveja');",
+		"INSERT INTO itens(descricao,figura) VALUES('Batata frita','batata_frita');"
 	};
 	private String[] scriptDrop={
 			"DROP TABLE IF EXISTS itens;"

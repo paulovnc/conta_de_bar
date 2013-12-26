@@ -1,8 +1,13 @@
 package br.pv;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
+import android.view.DragEvent;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnDragListener;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class MainActivity extends Activity {
 
